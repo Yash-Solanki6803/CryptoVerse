@@ -36,12 +36,12 @@ const Navbar = () => {
       icon : <HomeOutlined/>
     },
     {
-      label:"Home",
+      label:"Cryptocurrencies",
       key:"/cryptocurrencies",
       icon : <FundOutlined/>
     },
     {
-      label:"Home",
+      label:"News",
       key:"/news",
       icon : <BulbOutlined/>
     }
