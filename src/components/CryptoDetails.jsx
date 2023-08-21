@@ -24,7 +24,7 @@ const CryptoDetails = () => {
 
   if (isFetching) return <Loader />;
 
-  const time = ['3h', '24h', '7d', '30d', '1y', '3m', '3y', '5y'];
+  const time = ['3h', '24h', '7d', '30d', '1y', '3y', '5y'];
 
   const stats = [
     { title: 'Price to USD', value: `$ ${cryptoDetails?.price && millify(cryptoDetails?.price)}`, icon: <DollarCircleOutlined /> },
@@ -55,8 +55,8 @@ const CryptoDetails = () => {
       </Select>
 
 
-      {/* {console.log(`Locha Ahiya hova joiye  ${coinHistory} ${millify(cryptoDetails?.price)} ${cryptoDetails?.name}`)} */}
-      {/* {console.log(typeof(coinHistory) ,typeof(cryptoDetails.price),typeof(cryptoDetails.name))} */}
+      {/* {c0onsole.log(`Locha Ahiya hova joiye  ${coinHistory} ${millify(cryptoDetails?.price)} ${cryptoDetails?.name}`)} */}
+      {console.log(coinHistory) }
       <LineChart coinHistory={coinHistory} currentPrice={millify(cryptoDetails?.price)} coinName={cryptoDetails?.name} />
 
 
